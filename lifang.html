@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.xiayige{
+				margin-left:650px;
+				text-decoration: none;
+			}
+			.box{
+				margin:150px auto;
+				width:300px;
+				height:300px;
+				perspective:800px;
+				transform-style:preserve-3d;
+			}
+			.box1{
+				transform-style:preserve-3d;
+				width:300px;
+				height:300px;
+				position: relative;
+				animation: lifang 8s infinite linear;
+			}
+			.tu{
+				width:300px;
+				height:300px;
+				position:absolute;
+				text-align:center;
+				font-size:200px;
+				line-height:300px;
+			}
+			.top{
+				transform:rotateX(90deg) translateZ(150px);
+				background:#f7fa59;
+				background:url(3d.jpg);
+				background-size:300px 300px;
+			}
+			.bottom{
+				transform:rotateX(-90deg) translateZ(150px);
+				background:#e359fa;
+				background:url(3d.jpg);
+				background-size:300px 300px;
+			}
+			.left{
+				transform:rotateY(-90deg) translateZ(150px);
+				background:#595ffa;
+				background:url(3d.jpg);
+				background-size:300px 300px;
+			}
+			.right{
+				 transform:rotateY(90deg) translateZ(150px);
+				background:#79fa59;
+				background:url(3d.jpg);
+				background-size:300px 300px;
+			}
+			.qian{
+				transform:translateZ(150px);
+				background:#59e7fa;
+				background:url(3d.jpg);
+				background-size:300px 300px;
+			}
+			.hou{
+				transform:rotateY(-180deg) translateZ(150px);
+				background:#fa5959;
+				background:url(3d.jpg);
+				background-size:300px 300px;
+			}
+			@keyframes lifang{
+				0%{
+					transform: rotateY(0deg);
+				}
+				50%{
+					transform: rotateY(360deg);
+				}
+				60%{
+					transform: rotateX(0deg);
+				}
+				100%{
+					transform: rotateX(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<a href="xuanzhuanmuma.html"; class="xiayige">下一个</a>
+		<div class="box">
+			<div class="box1">
+				<div class="tu top"></div>
+				<div class="tu bottom"></div>
+				<div class="tu left"></div>
+				<div class="tu right"></div>
+				<div class="tu qian"></div>
+				<div class="tu hou"></div>
+			</div>
+		</div>
+	</body>
+</html>
